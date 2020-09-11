@@ -140,9 +140,6 @@ class Giiker extends EventEmitter {
     }
 
     const device = await window.navigator.bluetooth.requestDevice({
-      filters: [{
-        namePrefix: 'Gi',
-      }],
       optionalServices: [SERVICE_UUID, SYSTEM_SERVICE_UUID],
     });
 
